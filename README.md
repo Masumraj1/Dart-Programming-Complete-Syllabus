@@ -535,22 +535,363 @@ A feature that prevents type errors by enforcing type constraints at compile tim
 ## Collections
 
 ### What are Collections?
-Data structures that hold multiple values in a single variable.
+Data structures that hold multiple values in a single variable. Dart provides three main collection types: List, Set, and Map.
 
-### List Operations
+---
 
+## List (Ordered Collection)
+
+### What is a List?
+An ordered collection of elements where each element has an index position. Lists can contain duplicate values.
+
+```dart
+List<int> numbers = [1, 2, 3, 4, 5];
+var names = ['Alice', 'Bob', 'Charlie'];
+```
+
+### List Properties
+
+```dart
+List<int> numbers = [1, 2, 3, 4, 5];
+
+numbers.length;           // Get size: 5
+numbers.first;            // Get first element: 1
+numbers.last;             // Get last element: 5
+numbers.isEmpty;          // Check if empty: false
+numbers.isNotEmpty;       // Check if not empty: true
+numbers.reversed;         // Reversed iterable
+```
+
+### List Methods
+
+#### Adding Elements
 ```dart
 List<int> numbers = [1, 2, 3];
 
-// Properties
-numbers.length;           // Get size
+numbers.add(4);                  // Add single: [1, 2, 3, 4]
+numbers.addAll([5, 6, 7]);       // Add multiple: [1, 2, 3, 4, 5, 6, 7]
+numbers.insert(0, 0);            // Insert at index: [0, 1, 2, 3, 4, 5, 6, 7]
+numbers.insertAll(1, [10, 20]);  // Insert multiple at index
+```
 
-// Methods
-numbers.add(4);           // Add single element
-numbers.addAll([5, 6]);   // Add multiple elements
-numbers.remove(2);        // Remove by value
-numbers.removeAt(0);      // Remove by index
-numbers.clear();          // Remove all elements
+#### Removing Elements
+```dart
+List<int> numbers = [1, 2, 3, 4, 5, 3];
+
+numbers.remove(3);               // Remove first occurrence: [1, 2, 4, 5, 3]
+numbers.removeAt(0);             // Remove at index: [2, 4, 5, 3]
+numbers.removeLast();            // Remove last: [2, 4, 5]
+numbers.removeRange(0, 2);       // Remove range: [5]
+numbers.removeWhere((n) => n > 3); // Remove by condition
+numbers.clear();                 // Remove all elements
+```
+
+#### Accessing Elements
+```dart
+List<String> names = ['Alice', 'Bob', 'Charlie', 'David'];
+
+names[0];                        // Access by index: 'Alice'
+names.elementAt(1);              // Access by index: 'Bob'
+names.indexOf('Charlie');        // Find index: 2
+names.lastIndexOf('Bob');        // Last occurrence index
+names.contains('Alice');         // Check if contains: true
+```
+
+#### Modifying Elements
+```dart
+List<int> numbers = [1, 2, 3, 4, 5];
+
+numbers[0] = 10;                 // Update element: [10, 2, 3, 4, 5]
+numbers.replaceRange(1, 3, [20, 30]); // Replace range
+numbers.fillRange(0, 2, 0);      // Fill range with value
+numbers.setAll(0, [100, 200]);   // Set multiple from index
+```
+
+#### List Transformation
+```dart
+List<int> numbers = [1, 2, 3, 4, 5];
+
+numbers.map((n) => n * 2);       // Transform: [2, 4, 6, 8, 10]
+numbers.where((n) => n > 2);     // Filter: [3, 4, 5]
+numbers.take(3);                 // Take first n: [1, 2, 3]
+numbers.skip(2);                 // Skip first n: [3, 4, 5]
+numbers.toSet();                 // Convert to Set
+numbers.sublist(1, 4);           // Get sublist: [2, 3, 4]
+numbers.getRange(1, 4);          // Get range as iterable
+```
+
+#### List Operations
+```dart
+List<int> numbers = [3, 1, 4, 1, 5, 9];
+
+numbers.sort();                  // Sort ascending: [1, 1, 3, 4, 5, 9]
+numbers.shuffle();               // Shuffle randomly
+numbers.join(', ');              // Join to string: "1, 1, 3, 4, 5, 9"
+numbers.reduce((a, b) => a + b); // Reduce to single value: 23
+numbers.fold(0, (sum, n) => sum + n); // Fold with initial value
+numbers.every((n) => n > 0);     // Check if all match: true
+numbers.any((n) => n > 5);       // Check if any matches: true
+```
+
+#### List Generation
+```dart
+// Fixed length list
+List<int> fixedList = List.filled(5, 0); // [0, 0, 0, 0, 0]
+
+// Generate list
+List<int> generated = List.generate(5, (i) => i * 2); // [0, 2, 4, 6, 8]
+
+// From iterable
+List<int> fromSet = List.from({1, 2, 3}); // [1, 2, 3]
+
+// Empty list
+List<String> empty = [];
+```
+
+---
+
+## Set (Unique Collection)
+
+### What is a Set?
+An unordered collection of unique elements. Sets automatically remove duplicates.
+
+```dart
+Set<int> numbers = {1, 2, 3, 4, 5};
+var names = {'Alice', 'Bob', 'Charlie'};
+```
+
+### Set Properties
+
+```dart
+Set<int> numbers = {1, 2, 3, 4, 5};
+
+numbers.length;           // Get size: 5
+numbers.first;            // Get first element: 1
+numbers.last;             // Get last element: 5
+numbers.isEmpty;          // Check if empty: false
+numbers.isNotEmpty;       // Check if not empty: true
+```
+
+### Set Methods
+
+#### Adding Elements
+```dart
+Set<int> numbers = {1, 2, 3};
+
+numbers.add(4);                  // Add single: {1, 2, 3, 4}
+numbers.add(3);                  // Duplicate ignored: {1, 2, 3, 4}
+numbers.addAll([5, 6, 7]);       // Add multiple: {1, 2, 3, 4, 5, 6, 7}
+```
+
+#### Removing Elements
+```dart
+Set<int> numbers = {1, 2, 3, 4, 5};
+
+numbers.remove(3);               // Remove element: {1, 2, 4, 5}
+numbers.removeAll([1, 2]);       // Remove multiple: {4, 5}
+numbers.retainAll([4, 5, 6]);    // Keep only these: {4, 5}
+numbers.removeWhere((n) => n > 4); // Remove by condition: {4}
+numbers.clear();                 // Remove all elements
+```
+
+#### Set Operations
+```dart
+Set<int> set1 = {1, 2, 3, 4};
+Set<int> set2 = {3, 4, 5, 6};
+
+set1.union(set2);                // Union: {1, 2, 3, 4, 5, 6}
+set1.intersection(set2);         // Intersection: {3, 4}
+set1.difference(set2);           // Difference: {1, 2}
+set1.containsAll([1, 2]);        // Check if contains all: true
+```
+
+#### Checking Elements
+```dart
+Set<String> names = {'Alice', 'Bob', 'Charlie'};
+
+names.contains('Alice');         // Check if contains: true
+names.lookup('Bob');             // Find element: 'Bob' (or null)
+```
+
+#### Set Transformation
+```dart
+Set<int> numbers = {1, 2, 3, 4, 5};
+
+numbers.map((n) => n * 2);       // Transform: {2, 4, 6, 8, 10}
+numbers.where((n) => n > 2);     // Filter: {3, 4, 5}
+numbers.toList();                // Convert to List: [1, 2, 3, 4, 5]
+```
+
+#### Set Generation
+```dart
+// From list (removes duplicates)
+Set<int> fromList = {1, 2, 2, 3, 3}; // {1, 2, 3}
+
+// From iterable
+Set<int> fromIterable = Set.from([1, 2, 2, 3]); // {1, 2, 3}
+
+// Empty set
+Set<String> empty = {};
+Set<String> emptyTyped = <String>{};
+```
+
+---
+
+## Map (Key-Value Collection)
+
+### What is a Map?
+An unordered collection of key-value pairs where each key is unique.
+
+```dart
+Map<String, int> scores = {
+  'Alice': 90,
+  'Bob': 85,
+  'Charlie': 95,
+};
+```
+
+### Map Properties
+
+```dart
+Map<String, int> scores = {'Alice': 90, 'Bob': 85};
+
+scores.length;            // Get size: 2
+scores.isEmpty;           // Check if empty: false
+scores.isNotEmpty;        // Check if not empty: true
+scores.keys;              // Get all keys: ('Alice', 'Bob')
+scores.values;            // Get all values: (90, 85)
+scores.entries;           // Get key-value pairs
+```
+
+### Map Methods
+
+#### Adding and Updating
+```dart
+Map<String, int> scores = {'Alice': 90};
+
+scores['Bob'] = 85;              // Add/Update: {'Alice': 90, 'Bob': 85}
+scores.putIfAbsent('Charlie', () => 95); // Add if absent
+scores.addAll({'David': 88, 'Eve': 92}); // Add multiple
+scores.update('Alice', (v) => v + 5);    // Update value: 95
+scores.updateAll((k, v) => v + 10);      // Update all values
+```
+
+#### Removing Elements
+```dart
+Map<String, int> scores = {
+  'Alice': 90,
+  'Bob': 85,
+  'Charlie': 95,
+};
+
+scores.remove('Bob');            // Remove by key
+scores.removeWhere((k, v) => v < 90); // Remove by condition
+scores.clear();                  // Remove all entries
+```
+
+#### Accessing Elements
+```dart
+Map<String, int> scores = {'Alice': 90, 'Bob': 85};
+
+scores['Alice'];                 // Access value: 90
+scores['Unknown'];               // Returns null if not found
+scores.containsKey('Alice');     // Check if key exists: true
+scores.containsValue(90);        // Check if value exists: true
+```
+
+#### Map Transformation
+```dart
+Map<String, int> scores = {
+  'Alice': 90,
+  'Bob': 85,
+  'Charlie': 95,
+};
+
+scores.map((k, v) => MapEntry(k.toUpperCase(), v * 2));
+// Transform: {'ALICE': 180, 'BOB': 170, 'CHARLIE': 190}
+
+scores.forEach((k, v) {
+  print('$k: $v');               // Iterate through entries
+});
+```
+
+#### Map Generation
+```dart
+// From entries
+Map<String, int> fromEntries = Map.fromEntries([
+  MapEntry('Alice', 90),
+  MapEntry('Bob', 85),
+]);
+
+// From iterables
+Map<String, int> fromIterables = Map.fromIterables(
+  ['Alice', 'Bob'],
+  [90, 85],
+);
+
+// Empty map
+Map<String, int> empty = {};
+Map<String, int> emptyTyped = <String, int>{};
+```
+
+---
+
+## Collection Comparison
+
+| Feature | List | Set | Map |
+|---------|------|-----|-----|
+| Order | Maintained | Not guaranteed | Not guaranteed |
+| Duplicates | Allowed | Not allowed | Keys must be unique |
+| Access | By index | By iteration | By key |
+| Use Case | Ordered data | Unique items | Key-value pairs |
+
+---
+
+## Common Collection Operations
+
+### Iteration
+```dart
+List<int> numbers = [1, 2, 3];
+
+// For-in loop
+for (var n in numbers) {
+  print(n);
+}
+
+// forEach method
+numbers.forEach((n) => print(n));
+
+// For loop with index
+for (int i = 0; i < numbers.length; i++) {
+  print(numbers[i]);
+}
+```
+
+### Spread Operator
+```dart
+List<int> list1 = [1, 2, 3];
+List<int> list2 = [4, 5, 6];
+
+List<int> combined = [...list1, ...list2]; // [1, 2, 3, 4, 5, 6]
+
+// Null-aware spread
+List<int>? nullableList;
+List<int> safe = [...?nullableList, 1, 2]; // [1, 2]
+```
+
+### Collection If/For
+```dart
+// Collection if
+List<String> items = [
+  'Item 1',
+  if (condition) 'Item 2',
+  'Item 3',
+];
+
+// Collection for
+List<int> numbers = [
+  for (int i = 0; i < 5; i++) i * 2,
+]; // [0, 2, 4, 6, 8]
 ```
 
 ### What are Generics?
