@@ -1,184 +1,184 @@
-# Dart Programming Complete Syllabus
+# ডার্ট প্রোগ্রামিং সম্পূর্ণ সিলেবাস
 
-A comprehensive, step-by-step learning path for mastering Dart programming language before diving into Object-Oriented Programming (OOP) concepts.
-
----
-
-## Table of Contents
-
-1. [Getting Started](#getting-started)
-2. [Development Environment](#development-environment)
-3. [Project Setup & Management](#project-setup--management)
-4. [Variables & Constants](#variables--constants)
-5. [Operators](#operators)
-6. [Comments](#comments)
-7. [Data Types](#data-types)
-8. [Collections](#collections)
-9. [Control Flow](#control-flow)
-10. [Functions](#functions)
-11. [Concurrency](#concurrency)
-12. [Null Safety](#null-safety)
-13. [JSON Handling](#json-handling)
+অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিং (OOP) শেখার আগে ডার্ট প্রোগ্রামিং ভাষায় দক্ষতা অর্জনের জন্য একটি ধাপে ধাপে শেখার পথ।
 
 ---
 
-## Getting Started
+## বিষয়সূচি
 
-### What is Flutter?
-A cross-platform UI toolkit developed by Google for building natively compiled applications for mobile, web, and desktop from a single codebase.
-
-### Why Learn Flutter?
-- Single codebase for multiple platforms (iOS, Android, Web, Desktop)
-- Hot reload for faster development
-- Beautiful, customizable UI components
-- Strong community and Google support
-- High performance with native compilation
-
-### What is a Programming Language?
-A formal language comprising instructions that produce various outputs. It enables humans to communicate with computers through syntax and semantics.
-
-### What is Dart?
-Dart is a client-optimized programming language developed by Google, primarily used for building mobile, desktop, server, and web applications. It's the language behind Flutter.
+1. [শুরু করা](#শুরু-করা)
+2. [ডেভেলপমেন্ট পরিবেশ](#ডেভেলপমেন্ট-পরিবেশ)
+3. [প্রজেক্ট সেটআপ ও ম্যানেজমেন্ট](#প্রজেক্ট-সেটআপ-ও-ম্যানেজমেন্ট)
+4. [ভেরিয়েবল ও কনস্ট্যান্ট](#ভেরিয়েবল-ও-কনস্ট্যান্ট)
+5. [অপারেটর](#অপারেটর)
+6. [মন্তব্য (Comments)](#মন্তব্য)
+7. [ডেটা টাইপ](#ডেটা-টাইপ)
+8. [কালেকশন](#কালেকশন)
+9. [কন্ট্রোল ফ্লো](#কন্ট্রোল-ফ্লো)
+10. [ফাংশন](#ফাংশন)
+11. [কনকারেন্সি](#কনকারেন্সি)
+12. [নাল সেফটি](#নাল-সেফটি)
+13. [JSON হ্যান্ডলিং](#json-হ্যান্ডলিং)
 
 ---
 
-## Development Environment
+## শুরু করা
 
-### What are Editor Tools?
-Software applications that help developers write, edit, debug, and manage code. They provide features like syntax highlighting, code completion, and error detection.
+### ফ্লাটার কী?
+গুগল কর্তৃক তৈরি একটি ক্রস-প্ল্যাটফর্ম UI টুলকিট, যা একটি একক কোডবেস থেকে মোবাইল, ওয়েব এবং ডেস্কটপের জন্য নেটিভলি কম্পাইলড অ্যাপ্লিকেশন তৈরি করতে ব্যবহৃত হয়।
 
-### What is DartPad?
-An online editor for experimenting with Dart code directly in your browser. No installation required – perfect for quick testing and learning.
+### কেন ফ্লাটার শিখবেন?
+- একটি কোডবেস দিয়ে একাধিক প্ল্যাটফর্ম (iOS, Android, Web, Desktop)
+- দ্রুত ডেভেলপমেন্টের জন্য হট রিলোড
+- সুন্দর ও কাস্টমাইজযোগ্য UI কম্পোনেন্ট
+- শক্তিশালী কমিউনিটি এবং গুগলের সমর্থন
+- নেটিভ কম্পাইলেশনের মাধ্যমে উচ্চ পারফরম্যান্স
 
-**Access:** https://dartpad.dev
+### প্রোগ্রামিং ভাষা কী?
+এটি একটি আনুষ্ঠানিক ভাষা যা বিভিন্ন আউটপুট তৈরি করে এমন নির্দেশাবলী নিয়ে গঠিত। এটি মানুষকে সিনট্যাক্স এবং সেমান্টিক্সের মাধ্যমে কম্পিউটারের সাথে যোগাযোগ করতে সক্ষম করে।
 
-### What is Android Studio?
-A powerful IDE (Integrated Development Environment) for Android development, built on IntelliJ IDEA. It includes tools for Flutter development with plugins.
-
-### What is Git?
-A distributed version control system that tracks changes in source code during software development. It enables multiple developers to work together on projects.
-
-### What is GitHub?
-A web-based platform that hosts Git repositories. It provides collaboration features like pull requests, issues, and project management tools.
-
-### What is Flutter SDK?
-Software Development Kit containing all the necessary tools, libraries, and frameworks to develop Flutter applications.
-
-### What is JDK?
-Java Development Kit – a software development environment required for building Android applications. Includes compiler, debugger, and runtime environment.
-
-### What is Gradlew?
-Gradle Wrapper – a script that allows you to run Gradle builds without installing Gradle. It ensures consistent build environments across different machines.
-
-### What is pubspec.yaml?
-A configuration file in Dart/Flutter projects that defines:
-- Project dependencies
-- Package versions
-- Assets (images, fonts)
-- Project metadata
+### ডার্ট কী?
+ডার্ট হলো গুগল কর্তৃক তৈরি একটি ক্লায়েন্ট-অপ্টিমাইজড প্রোগ্রামিং ভাষা, যা মূলত মোবাইল, ডেস্কটপ, সার্ভার এবং ওয়েব অ্যাপ্লিকেশন তৈরিতে ব্যবহৃত হয়। এটি ফ্লাটারের পেছনের ভাষা।
 
 ---
 
-## Project Setup & Management
+## ডেভেলপমেন্ট পরিবেশ
 
-### How to Create a Flutter Project
+### এডিটর টুলস কী?
+সফটওয়্যার অ্যাপ্লিকেশন যা ডেভেলপারদের কোড লিখতে, সম্পাদনা করতে, ডিবাগ করতে এবং পরিচালনা করতে সাহায্য করে। এগুলো সিনট্যাক্স হাইলাইটিং, কোড কমপ্লিশন এবং ত্রুটি সনাক্তকরণের মতো বৈশিষ্ট্য প্রদান করে।
+
+### DartPad কী?
+সরাসরি ব্রাউজারে ডার্ট কোড পরীক্ষা করার একটি অনলাইন এডিটর। কোনো ইনস্টলেশন প্রয়োজন নেই – দ্রুত পরীক্ষা ও শেখার জন্য উপযুক্ত।
+
+**ঠিকানা:** https://dartpad.dev
+
+### অ্যান্ড্রয়েড স্টুডিও কী?
+IntelliJ IDEA এর উপর নির্মিত অ্যান্ড্রয়েড ডেভেলপমেন্টের জন্য একটি শক্তিশালী IDE (ইন্টিগ্রেটেড ডেভেলপমেন্ট এনভায়রনমেন্ট)। এটি প্লাগইন সহ ফ্লাটার ডেভেলপমেন্টের জন্য টুলস অন্তর্ভুক্ত করে।
+
+### Git কী?
+একটি বিতরণকৃত ভার্সন কন্ট্রোল সিস্টেম যা সফটওয়্যার ডেভেলপমেন্টের সময় সোর্স কোডের পরিবর্তন ট্র্যাক করে। এটি একাধিক ডেভেলপারকে একসাথে প্রজেক্টে কাজ করতে সক্ষম করে।
+
+### GitHub কী?
+একটি ওয়েব-ভিত্তিক প্ল্যাটফর্ম যা Git রিপোজিটরি হোস্ট করে। এটি পুল রিকোয়েস্ট, ইস্যু এবং প্রজেক্ট ম্যানেজমেন্ট টুলের মতো সহযোগিতার বৈশিষ্ট্য প্রদান করে।
+
+### ফ্লাটার SDK কী?
+সফটওয়্যার ডেভেলপমেন্ট কিট যাতে ফ্লাটার অ্যাপ্লিকেশন তৈরির জন্য প্রয়োজনীয় সমস্ত টুলস, লাইব্রেরি এবং ফ্রেমওয়ার্ক রয়েছে।
+
+### JDK কী?
+জাভা ডেভেলপমেন্ট কিট – অ্যান্ড্রয়েড অ্যাপ্লিকেশন তৈরির জন্য প্রয়োজনীয় একটি সফটওয়্যার ডেভেলপমেন্ট পরিবেশ। এতে কম্পাইলার, ডিবাগার এবং রানটাইম পরিবেশ অন্তর্ভুক্ত।
+
+### Gradlew কী?
+Gradle Wrapper – একটি স্ক্রিপ্ট যা Gradle ইনস্টল না করেই Gradle বিল্ড চালাতে দেয়। এটি বিভিন্ন মেশিনে একই বিল্ড পরিবেশ নিশ্চিত করে।
+
+### pubspec.yaml কী?
+ডার্ট/ফ্লাটার প্রজেক্টের একটি কনফিগারেশন ফাইল যা নিম্নলিখিত বিষয়গুলো সংজ্ঞায়িত করে:
+- প্রজেক্টের নির্ভরতা (dependencies)
+- প্যাকেজ ভার্সন
+- অ্যাসেট (ছবি, ফন্ট)
+- প্রজেক্টের মেটাডেটা
+
+---
+
+## প্রজেক্ট সেটআপ ও ম্যানেজমেন্ট
+
+### ফ্লাটার প্রজেক্ট কীভাবে তৈরি করবেন
 
 ```bash
 flutter create project_name
 ```
 
-### How to Check Versions
+### ভার্সন কীভাবে দেখবেন
 
 ```bash
-# Flutter version
+# ফ্লাটার ভার্সন
 flutter --version
 
-# Dart version
+# ডার্ট ভার্সন
 dart --version
 
-# Java version
+# জাভা ভার্সন
 java -version
 ```
 
-### How to Set Up Flutter in Windows
+### উইন্ডোজে ফ্লাটার কীভাবে সেটআপ করবেন
 
-1. Download Flutter SDK from official website
-2. Extract to desired location (e.g., `C:\src\flutter`)
-3. Add Flutter to PATH environment variable
-4. Install Android Studio
-5. Install Flutter and Dart plugins in Android Studio
-6. Run `flutter doctor` to verify installation
-7. Accept Android licenses: `flutter doctor --android-licenses`
+1. অফিসিয়াল ওয়েবসাইট থেকে Flutter SDK ডাউনলোড করুন
+2. পছন্দের স্থানে এক্সট্র্যাক্ট করুন (যেমন, `C:\src\flutter`)
+3. PATH এনভায়রনমেন্ট ভেরিয়েবলে Flutter যোগ করুন
+4. Android Studio ইনস্টল করুন
+5. Android Studio-তে Flutter এবং Dart প্লাগইন ইনস্টল করুন
+6. ইনস্টলেশন যাচাই করতে `flutter doctor` চালান
+7. Android লাইসেন্স গ্রহণ করুন: `flutter doctor --android-licenses`
 
 ---
 
-## Variables & Constants
+## ভেরিয়েবল ও কনস্ট্যান্ট
 
-### What is a Variable?
-A named storage location in memory that holds a value which can change during program execution.
+### ভেরিয়েবল কী?
+মেমোরিতে একটি নামযুক্ত স্টোরেজ স্থান যা এমন একটি মান ধারণ করে যা প্রোগ্রাম চলাকালীন পরিবর্তন হতে পারে।
 
-### What is var?
-A keyword for declaring variables without explicitly specifying the type. Dart infers the type from the assigned value.
+### var কী?
+টাইপ স্পষ্টভাবে উল্লেখ না করে ভেরিয়েবল ঘোষণার একটি কীওয়ার্ড। ডার্ট নির্ধারিত মান থেকে টাইপ অনুমান করে।
 
 ```dart
-var name = 'John';  // String type inferred
-var age = 25;       // int type inferred
+var name = 'John';  // String টাইপ অনুমান করা হয়েছে
+var age = 25;       // int টাইপ অনুমান করা হয়েছে
 ```
 
-### What is a Dart Variable?
-A container that stores data values in Dart programs. Variables must be declared before use and follow Dart's type system.
+### ডার্ট ভেরিয়েবল কী?
+ডার্ট প্রোগ্রামে ডেটা মান সংরক্ষণ করে এমন একটি কন্টেইনার। ভেরিয়েবল ব্যবহারের আগে ঘোষণা করতে হবে এবং ডার্টের টাইপ সিস্টেম অনুসরণ করতে হবে।
 
-### What is late Variable?
-A modifier that allows you to declare non-nullable variables that are initialized after declaration but before use.
+### late ভেরিয়েবল কী?
+এটি এমন নন-নালেবল ভেরিয়েবল ঘোষণা করতে দেয় যা ঘোষণার পরে কিন্তু ব্যবহারের আগে ইনিশিয়ালাইজ করা হয়।
 
 ```dart
 late String description;
 void initialize() {
-  description = 'Initialized later';
+  description = 'পরে ইনিশিয়ালাইজ করা হয়েছে';
 }
 ```
 
-### What is final Keyword?
-Creates a runtime constant – a variable that can only be set once and cannot be changed after initialization.
+### final কীওয়ার্ড কী?
+একটি রানটাইম কনস্ট্যান্ট তৈরি করে – একটি ভেরিয়েবল যা শুধুমাত্র একবার সেট করা যায় এবং ইনিশিয়ালাইজেশনের পরে পরিবর্তন করা যায় না।
 
 ```dart
 final String name = 'Alice';
-final currentTime = DateTime.now();  // Evaluated at runtime
+final currentTime = DateTime.now();  // রানটাইমে মূল্যায়িত হয়
 ```
 
-### What is const Keyword?
-Creates a compile-time constant – a value that must be known and fixed at compile time.
+### const কীওয়ার্ড কী?
+একটি কম্পাইল-টাইম কনস্ট্যান্ট তৈরি করে – এমন একটি মান যা কম্পাইল সময়ে অবশ্যই জানা এবং নির্ধারিত থাকতে হবে।
 
 ```dart
 const pi = 3.14159;
 const maxItems = 100;
 ```
 
-### Difference Between final and const
+### final এবং const এর পার্থক্য
 
-| Aspect | final | const |
-|--------|-------|-------|
-| Evaluation | Runtime | Compile-time |
-| Use Case | Values known at runtime | Values known at compile-time |
-| Memory | Each instance gets own copy | Single canonical instance |
-| Objects | Can contain mutable objects | Deep immutability |
+| দিক | final | const |
+|-----|-------|-------|
+| মূল্যায়ন | রানটাইম | কম্পাইল-টাইম |
+| ব্যবহার | রানটাইমে জানা মানের জন্য | কম্পাইল সময়ে জানা মানের জন্য |
+| মেমোরি | প্রতিটি ইনস্ট্যান্সের নিজস্ব কপি | একক ক্যানোনিক্যাল ইনস্ট্যান্স |
+| অবজেক্ট | পরিবর্তনযোগ্য অবজেক্ট থাকতে পারে | গভীর অপরিবর্তনীয়তা |
 
 ```dart
 final list1 = [1, 2, 3];
-list1.add(4);  // Allowed – list is mutable
+list1.add(4);  // অনুমোদিত – লিস্ট পরিবর্তনযোগ্য
 
 const list2 = [1, 2, 3];
-// list2.add(4);  // ERROR – completely immutable
+// list2.add(4);  // ত্রুটি – সম্পূর্ণ অপরিবর্তনীয়
 ```
 
-### What are Compile-time Constants?
-Values that are calculated and fixed during compilation, before the program runs. Must use `const` keyword.
+### কম্পাইল-টাইম কনস্ট্যান্ট কী?
+প্রোগ্রাম চালানোর আগে কম্পাইলেশনের সময় গণনা করা এবং নির্ধারিত মান। `const` কীওয়ার্ড ব্যবহার করতে হবে।
 
-### What are Runtime Constants?
-Values that are determined when the program executes. Can use `final` keyword.
+### রানটাইম কনস্ট্যান্ট কী?
+প্রোগ্রাম চলার সময় নির্ধারিত মান। `final` কীওয়ার্ড ব্যবহার করা যায়।
 
-### What is static Keyword?
-Creates class-level members that belong to the class itself rather than instances of the class.
+### static কীওয়ার্ড কী?
+ক্লাস-লেভেলের সদস্য তৈরি করে যা ইনস্ট্যান্সের পরিবর্তে ক্লাসের অন্তর্গত।
 
 ```dart
 class MathUtils {
@@ -189,158 +189,152 @@ class MathUtils {
 
 ---
 
-## Operators
+## অপারেটর
 
-### What are Operators?
-Special symbols that perform operations on operands (variables or values).
+### অপারেটর কী?
+বিশেষ চিহ্ন যা অপারেন্ডের (ভেরিয়েবল বা মান) উপর অপারেশন করে।
 
-### Types of Operators
+### অপারেটরের প্রকারভেদ
 
-#### 1. Arithmetic Operators
-Perform mathematical calculations.
+#### ১. গাণিতিক অপারেটর
+গাণিতিক হিসাব সম্পাদন করে।
 
-| Operator | Name | Example |
-|----------|------|---------|
-| `+` | Addition | `5 + 3 = 8` |
-| `-` | Subtraction | `5 - 3 = 2` |
-| `*` | Multiplication | `5 * 3 = 15` |
-| `/` | Division | `5 / 2 = 2.5` |
-| `~/` | Integer Division | `5 ~/ 2 = 2` |
-| `%` | Modulus (Remainder) | `5 % 2 = 1` |
+| অপারেটর | নাম | উদাহরণ |
+|----------|-----|---------|
+| `+` | যোগ | `5 + 3 = 8` |
+| `-` | বিয়োগ | `5 - 3 = 2` |
+| `*` | গুণ | `5 * 3 = 15` |
+| `/` | ভাগ | `5 / 2 = 2.5` |
+| `~/` | পূর্ণসংখ্যা ভাগ | `5 ~/ 2 = 2` |
+| `%` | মডুলাস (ভাগশেষ) | `5 % 2 = 1` |
 
-#### 2. Equality and Relational Operators
-Compare values and return boolean results.
+#### ২. সমতা ও সম্পর্কমূলক অপারেটর
+মান তুলনা করে এবং বুলিয়ান ফলাফল দেয়।
 
-| Operator | Name | Example |
-|----------|------|---------|
-| `==` | Equal to | `5 == 5` is `true` |
-| `!=` | Not equal to | `5 != 3` is `true` |
-| `>` | Greater than | `5 > 3` is `true` |
-| `<` | Less than | `3 < 5` is `true` |
-| `>=` | Greater than or equal | `5 >= 5` is `true` |
-| `<=` | Less than or equal | `3 <= 5` is `true` |
+| অপারেটর | নাম | উদাহরণ |
+|----------|-----|---------|
+| `==` | সমান | `5 == 5` হলো `true` |
+| `!=` | সমান নয় | `5 != 3` হলো `true` |
+| `>` | বড় | `5 > 3` হলো `true` |
+| `<` | ছোট | `3 < 5` হলো `true` |
+| `>=` | বড় বা সমান | `5 >= 5` হলো `true` |
+| `<=` | ছোট বা সমান | `3 <= 5` হলো `true` |
 
-#### 3. Type Test Operators
-Check and cast types at runtime.
+#### ৩. টাইপ টেস্ট অপারেটর
+রানটাইমে টাইপ পরীক্ষা ও রূপান্তর করে।
 
-| Operator | Name | Usage |
-|----------|------|-------|
-| `is` | Type check (true if match) | `x is String` |
-| `is!` | Type check (true if not match) | `x is! int` |
-| `as` | Type cast | `x as String` |
+| অপারেটর | নাম | ব্যবহার |
+|----------|-----|---------|
+| `is` | টাইপ চেক (মিলে গেলে true) | `x is String` |
+| `is!` | টাইপ চেক (না মিললে true) | `x is! int` |
+| `as` | টাইপ কাস্ট | `x as String` |
 
-#### 4. Assignment Operators
-Assign values to variables.
+#### ৪. অ্যাসাইনমেন্ট অপারেটর
+ভেরিয়েবলে মান নির্ধারণ করে।
 
-| Operator | Example | Equivalent to |
-|----------|---------|---------------|
-| `=` | `x = 5` | Assign |
+| অপারেটর | উদাহরণ | সমতুল্য |
+|----------|---------|---------|
+| `=` | `x = 5` | নির্ধারণ |
 | `+=` | `x += 3` | `x = x + 3` |
 | `-=` | `x -= 3` | `x = x - 3` |
 | `*=` | `x *= 3` | `x = x * 3` |
 | `/=` | `x /= 3` | `x = x / 3` |
 | `~/=` | `x ~/= 3` | `x = x ~/ 3` |
 | `%=` | `x %= 3` | `x = x % 3` |
-| `&=` | `x &= 3` | `x = x & 3` |
-| `|=` | `x |= 3` | `x = x | 3` |
-| `^=` | `x ^= 3` | `x = x ^ 3` |
-| `<<=` | `x <<= 3` | `x = x << 3` |
-| `>>=` | `x >>= 3` | `x = x >> 3` |
-| `>>>=` | `x >>>= 3` | `x = x >>> 3` |
 
-#### 5. Logical Operators
-Combine or invert boolean expressions.
+#### ৫. লজিক্যাল অপারেটর
+বুলিয়ান এক্সপ্রেশন একত্রিত বা উল্টায়।
 
-| Operator | Name | Example |
-|----------|------|---------|
-| `!` | NOT (negation) | `!true` is `false` |
-| `||` | OR | `true || false` is `true` |
-| `&&` | AND | `true && false` is `false` |
+| অপারেটর | নাম | উদাহরণ |
+|----------|-----|---------|
+| `!` | NOT (বিপরীত) | `!true` হলো `false` |
+| `\|\|` | OR | `true \|\| false` হলো `true` |
+| `&&` | AND | `true && false` হলো `false` |
 
-#### 6. Bitwise and Shift Operators
-Perform bit-level operations.
+#### ৬. বিটওয়াইজ ও শিফট অপারেটর
+বিট-লেভেল অপারেশন করে।
 
-| Operator | Name | Description |
-|----------|------|-------------|
-| `&` | AND | Both bits must be 1 |
-| `|` | OR | At least one bit is 1 |
-| `^` | XOR | Bits are different |
-| `~` | NOT | Inverts bits |
-| `<<` | Left shift | Shift bits left |
-| `>>` | Right shift | Shift bits right |
-| `>>>` | Unsigned right shift | Shift right with zero fill |
+| অপারেটর | নাম | বিবরণ |
+|----------|-----|-------|
+| `&` | AND | উভয় বিট ১ হতে হবে |
+| `\|` | OR | কমপক্ষে একটি বিট ১ |
+| `^` | XOR | বিটগুলো আলাদা |
+| `~` | NOT | বিট উল্টায় |
+| `<<` | বাম শিফট | বিট বামে সরায় |
+| `>>` | ডান শিফট | বিট ডানে সরায় |
+| `>>>` | আনসাইনড ডান শিফট | শূন্য দিয়ে ডানে সরায় |
 
-#### 7. Conditional Expressions
-Compact if-else alternatives.
+#### ৭. শর্তমূলক এক্সপ্রেশন
+সংক্ষিপ্ত if-else বিকল্প।
 
-| Operator | Name | Syntax |
-|----------|------|--------|
-| `? :` | Ternary | `condition ? valueIfTrue : valueIfFalse` |
-| `??` | Null coalescing | `value1 ?? value2` (returns value2 if value1 is null) |
+| অপারেটর | নাম | সিনট্যাক্স |
+|----------|-----|-----------|
+| `? :` | টারনারি | `শর্ত ? সত্য_হলে : মিথ্যা_হলে` |
+| `??` | নাল কোয়ালেসিং | `মান১ ?? মান২` (মান১ null হলে মান২ দেয়) |
 
-#### 8. Cascade Notation
-Chain multiple operations on the same object.
+#### ৮. ক্যাসকেড নোটেশন
+একই অবজেক্টে একাধিক অপারেশন চেইন করে।
 
-| Operator | Usage | Example |
-|----------|-------|---------|
-| `..` | Cascade | `obj..method1()..method2()` |
-| `?..` | Null-aware cascade | `obj?..method()` |
+| অপারেটর | ব্যবহার | উদাহরণ |
+|----------|---------|---------|
+| `..` | ক্যাসকেড | `obj..method1()..method2()` |
+| `?..` | নাল-অ্যাওয়ার ক্যাসকেড | `obj?..method()` |
 
-#### 9. Spread Operators
-Expand collections inline.
+#### ৯. স্প্রেড অপারেটর
+কালেকশন ইনলাইনে প্রসারিত করে।
 
-| Operator | Usage | Example |
-|----------|-------|---------|
-| `...` | Spread | `[...list1, ...list2]` |
-| `...?` | Null-aware spread | `[...?nullableList]` |
+| অপারেটর | ব্যবহার | উদাহরণ |
+|----------|---------|---------|
+| `...` | স্প্রেড | `[...list1, ...list2]` |
+| `...?` | নাল-অ্যাওয়ার স্প্রেড | `[...?nullableList]` |
 
-#### 10. Other Operators
+#### ১০. অন্যান্য অপারেটর
 
-| Operator | Name | Usage |
-|----------|------|-------|
-| `()` | Function call | `function()` |
-| `[]` | List access | `list[0]` |
-| `?[]` | Null-aware list access | `list?[0]` |
-| `.` | Member access | `object.property` |
-| `?.` | Null-aware member access | `object?.property` |
-| `!` | Null assertion | `nullable!` |
+| অপারেটর | নাম | ব্যবহার |
+|----------|-----|---------|
+| `()` | ফাংশন কল | `function()` |
+| `[]` | লিস্ট অ্যাক্সেস | `list[0]` |
+| `?[]` | নাল-অ্যাওয়ার লিস্ট অ্যাক্সেস | `list?[0]` |
+| `.` | সদস্য অ্যাক্সেস | `object.property` |
+| `?.` | নাল-অ্যাওয়ার সদস্য অ্যাক্সেস | `object?.property` |
+| `!` | নাল অ্যাসার্শন | `nullable!` |
 
 ---
 
-## Comments
+## মন্তব্য
 
-### What are Comments?
-Non-executable text in code that explains functionality, provides documentation, or adds notes for developers.
+### মন্তব্য কী?
+কোডের মধ্যে নন-এক্সিকিউটেবল টেক্সট যা কার্যকারিতা ব্যাখ্যা করে, ডকুমেন্টেশন প্রদান করে বা ডেভেলপারদের জন্য নোট যোগ করে।
 
-### Types of Comments
+### মন্তব্যের প্রকারভেদ
 
-#### 1. Single-line Comments
+#### ১. একক-লাইন মন্তব্য
 ```dart
-// This is a single-line comment
-int age = 25;  // Age of the user
+// এটি একটি একক-লাইন মন্তব্য
+int age = 25;  // ব্যবহারকারীর বয়স
 ```
 
-#### 2. Multi-line Comments
+#### ২. বহু-লাইন মন্তব্য
 ```dart
 /*
-This is a multi-line comment
-spanning multiple lines
-Useful for longer explanations
+এটি একটি বহু-লাইন মন্তব্য
+একাধিক লাইনে বিস্তৃত
+দীর্ঘ ব্যাখ্যার জন্য উপযুক্ত
 */
 int calculate(int a, int b) {
   return a + b;
 }
 ```
 
-#### 3. Documentation Comments
+#### ৩. ডকুমেন্টেশন মন্তব্য
 ```dart
-/// Calculates the sum of two numbers.
+/// দুটি সংখ্যার যোগফল গণনা করে।
 ///
-/// Returns the sum of [a] and [b].
-/// 
-/// Example:
+/// [a] এবং [b] এর যোগফল ফেরত দেয়।
+///
+/// উদাহরণ:
 /// ```dart
-/// int result = add(5, 3);  // Returns 8
+/// int result = add(5, 3);  // ৮ ফেরত দেয়
 /// ```
 int add(int a, int b) {
   return a + b;
@@ -349,88 +343,88 @@ int add(int a, int b) {
 
 ---
 
-## Data Types
+## ডেটা টাইপ
 
-### What is the main() Function?
-The entry point of every Dart program. Execution starts from the main() function.
+### main() ফাংশন কী?
+প্রতিটি ডার্ট প্রোগ্রামের প্রবেশবিন্দু। এক্সিকিউশন main() ফাংশন থেকে শুরু হয়।
 
 ```dart
 void main() {
-  print('Hello, Dart!');
+  print('হ্যালো, ডার্ট!');
 }
 ```
 
-### How to Run Your First App
+### প্রথম অ্যাপ কীভাবে চালাবেন
 
 ```bash
-# Run Dart file
+# ডার্ট ফাইল চালান
 dart run filename.dart
 
-# Or in Flutter
+# অথবা ফ্লাটারে
 flutter run
 ```
 
-### What are Emulator Device and Real Device?
+### এমুলেটর ডিভাইস ও রিয়েল ডিভাইস কী?
 
-**Emulator Device:**
-- Virtual device running on your computer
-- Simulates Android/iOS environment
-- Useful for testing without physical hardware
+**এমুলেটর ডিভাইস:**
+- আপনার কম্পিউটারে চলা ভার্চুয়াল ডিভাইস
+- Android/iOS পরিবেশ সিমুলেট করে
+- ফিজিক্যাল হার্ডওয়্যার ছাড়া পরীক্ষার জন্য উপযুক্ত
 
-**Real Device:**
-- Physical smartphone or tablet
-- More accurate testing experience
-- Better performance testing
+**রিয়েল ডিভাইস:**
+- ফিজিক্যাল স্মার্টফোন বা ট্যাবলেট
+- আরো সঠিক পরীক্ষার অভিজ্ঞতা
+- পারফরম্যান্স পরীক্ষার জন্য ভালো
 
-### Core Data Types
+### মূল ডেটা টাইপসমূহ
 
-#### 1. Numbers
+#### ১. সংখ্যা (Numbers)
 ```dart
-int age = 25;              // Integer
-double price = 19.99;      // Floating-point number
-num quantity = 10;         // Can be int or double
+int age = 25;              // পূর্ণসংখ্যা
+double price = 19.99;      // দশমিক সংখ্যা
+num quantity = 10;         // int বা double হতে পারে
 ```
 
-#### 2. Strings
+#### ২. স্ট্রিং (Strings)
 ```dart
 String name = 'Alice';
-String message = "Hello, World!";
+String message = "হ্যালো, বিশ্ব!";
 String multiline = '''
-This is a
-multi-line string
+এটি একটি
+বহু-লাইন স্ট্রিং
 ''';
 ```
 
-#### 3. Booleans
+#### ৩. বুলিয়ান (Booleans)
 ```dart
 bool isActive = true;
 bool hasPermission = false;
 ```
 
-#### 4. Records
+#### ৪. রেকর্ড (Records)
 ```dart
-(int, String) record = (1, 'First');
-var (id, name) = record;  // Destructuring
+(int, String) record = (1, 'প্রথম');
+var (id, name) = record;  // ডিস্ট্রাকচারিং
 ```
 
-#### 5. Functions
+#### ৫. ফাংশন (Functions)
 ```dart
-Function greet = (String name) => print('Hello, $name');
+Function greet = (String name) => print('হ্যালো, $name');
 ```
 
-#### 6. Lists (Arrays)
+#### ৬. লিস্ট (Lists/Arrays)
 ```dart
 List<int> numbers = [1, 2, 3, 4, 5];
 var names = ['Alice', 'Bob', 'Charlie'];
 ```
 
-#### 7. Sets
+#### ৭. সেট (Sets)
 ```dart
 Set<String> uniqueNames = {'Alice', 'Bob', 'Charlie'};
-var numbers = {1, 2, 3, 3};  // Duplicates removed
+var numbers = {1, 2, 3, 3};  // ডুপ্লিকেট সরানো হয়
 ```
 
-#### 8. Maps
+#### ৮. ম্যাপ (Maps)
 ```dart
 Map<String, int> scores = {
   'Alice': 90,
@@ -439,37 +433,37 @@ Map<String, int> scores = {
 };
 ```
 
-#### 9. Runes
+#### ৯. রুনস (Runes)
 ```dart
-Runes input = Runes('\u{1f600}');  // 😀 emoji
+Runes input = Runes('\u{1f600}');  // 😀 ইমোজি
 ```
 
-#### 10. Symbols
+#### ১০. সিম্বল (Symbols)
 ```dart
 Symbol sym = #mySymbol;
 ```
 
-### Special Type Keywords
+### বিশেষ টাইপ কীওয়ার্ড
 
-#### What is enum?
-Defines a set of named constant values.
+#### enum কী?
+নামযুক্ত কনস্ট্যান্ট মানের একটি সেট সংজ্ঞায়িত করে।
 
 ```dart
 enum Status { pending, approved, rejected }
 Status currentStatus = Status.pending;
 ```
 
-#### What is Future?
-Represents a potential value or error that will be available at some time in the future.
+#### Future কী?
+ভবিষ্যতে কোনো সময়ে পাওয়া যাবে এমন সম্ভাব্য মান বা ত্রুটি প্রতিনিধিত্ব করে।
 
 ```dart
 Future<String> fetchData() async {
-  return 'Data loaded';
+  return 'ডেটা লোড হয়েছে';
 }
 ```
 
-#### What is void?
-Indicates that a function doesn't return a value.
+#### void কী?
+নির্দেশ করে যে একটি ফাংশন কোনো মান ফেরত দেয় না।
 
 ```dart
 void printMessage(String msg) {
@@ -477,48 +471,48 @@ void printMessage(String msg) {
 }
 ```
 
-#### What is Iterable?
-A collection of values that can be accessed sequentially.
+#### Iterable কী?
+মানের একটি সংগ্রহ যা ক্রমানুসারে অ্যাক্সেস করা যায়।
 
 ```dart
 Iterable<int> numbers = [1, 2, 3, 4, 5];
 ```
 
-#### What is Never?
-Indicates that a function never successfully completes (always throws or never returns).
+#### Never কী?
+নির্দেশ করে যে একটি ফাংশন কখনো সফলভাবে সম্পন্ন হয় না (সবসময় থ্রো করে বা কখনো রিটার্ন করে না)।
 
 ```dart
 Never throwError() {
-  throw Exception('Error occurred');
+  throw Exception('ত্রুটি ঘটেছে');
 }
 ```
 
-#### What is dynamic?
-Allows any type at runtime – bypasses type checking.
+#### dynamic কী?
+রানটাইমে যেকোনো টাইপ অনুমতি দেয় – টাইপ চেকিং বাইপাস করে।
 
 ```dart
-dynamic variable = 'String';
-variable = 42;  // Allowed
+dynamic variable = 'স্ট্রিং';
+variable = 42;  // অনুমোদিত
 ```
 
-#### What is Object?
-The base class of all Dart objects (except null).
+#### Object কী?
+সমস্ত ডার্ট অবজেক্টের বেস ক্লাস (null ছাড়া)।
 
 ```dart
-Object value = 'Can be any type';
+Object value = 'যেকোনো টাইপ হতে পারে';
 ```
 
-#### What is Return Type?
-The data type that a function returns to its caller.
+#### রিটার্ন টাইপ কী?
+ডেটা টাইপ যা একটি ফাংশন তার কলারকে ফেরত দেয়।
 
 ```dart
-int add(int a, int b) {  // int is the return type
+int add(int a, int b) {  // int হলো রিটার্ন টাইপ
   return a + b;
 }
 ```
 
-#### What are Typedefs?
-Creates an alias for a function signature or type.
+#### Typedefs কী?
+ফাংশন সিগনেচার বা টাইপের জন্য একটি উপনাম তৈরি করে।
 
 ```dart
 typedef IntOperation = int Function(int, int);
@@ -527,220 +521,207 @@ IntOperation add = (a, b) => a + b;
 IntOperation multiply = (a, b) => a * b;
 ```
 
-#### What is Type Safety?
-A feature that prevents type errors by enforcing type constraints at compile time.
+#### টাইপ সেফটি কী?
+একটি বৈশিষ্ট্য যা কম্পাইল সময়ে টাইপ সীমাবদ্ধতা প্রয়োগ করে টাইপ ত্রুটি প্রতিরোধ করে।
 
 ---
 
-## Collections
+## কালেকশন
 
-### What are Collections?
-Data structures that hold multiple values in a single variable. Dart provides three main collection types: List, Set, and Map.
+### কালেকশন কী?
+ডেটা স্ট্রাকচার যা একটি একক ভেরিয়েবলে একাধিক মান ধারণ করে। ডার্ট তিনটি প্রধান কালেকশন টাইপ প্রদান করে: List, Set এবং Map।
 
 ---
 
-## List (Ordered Collection)
+## লিস্ট (ক্রমানুক্রমিক কালেকশন)
 
-### What is a List?
-An ordered collection of elements where each element has an index position. Lists can contain duplicate values.
+### লিস্ট কী?
+উপাদানের একটি ক্রমানুক্রমিক সংগ্রহ যেখানে প্রতিটি উপাদানের একটি ইন্ডেক্স পজিশন আছে। লিস্টে ডুপ্লিকেট মান থাকতে পারে।
 
 ```dart
 List<int> numbers = [1, 2, 3, 4, 5];
 var names = ['Alice', 'Bob', 'Charlie'];
 ```
 
-### List Properties
+### লিস্ট প্রপার্টি
 
 ```dart
 List<int> numbers = [1, 2, 3, 4, 5];
 
-numbers.length;           // Get size: 5
-numbers.first;            // Get first element: 1
-numbers.last;             // Get last element: 5
-numbers.isEmpty;          // Check if empty: false
-numbers.isNotEmpty;       // Check if not empty: true
-numbers.reversed;         // Reversed iterable
+numbers.length;           // আকার পান: 5
+numbers.first;            // প্রথম উপাদান পান: 1
+numbers.last;             // শেষ উপাদান পান: 5
+numbers.isEmpty;          // খালি কিনা চেক: false
+numbers.isNotEmpty;       // খালি নয় কিনা চেক: true
+numbers.reversed;         // উল্টানো iterable
 ```
 
-### List Methods
+### লিস্ট মেথড
 
-#### Adding Elements
+#### উপাদান যোগ করা
 ```dart
 List<int> numbers = [1, 2, 3];
 
-numbers.add(4);                  // Add single: [1, 2, 3, 4]
-numbers.addAll([5, 6, 7]);       // Add multiple: [1, 2, 3, 4, 5, 6, 7]
-numbers.insert(0, 0);            // Insert at index: [0, 1, 2, 3, 4, 5, 6, 7]
-numbers.insertAll(1, [10, 20]);  // Insert multiple at index
+numbers.add(4);                  // একটি যোগ করুন: [1, 2, 3, 4]
+numbers.addAll([5, 6, 7]);       // একাধিক যোগ করুন: [1, 2, 3, 4, 5, 6, 7]
+numbers.insert(0, 0);            // ইন্ডেক্সে ঢোকান: [0, 1, 2, 3, 4, 5, 6, 7]
+numbers.insertAll(1, [10, 20]);  // ইন্ডেক্সে একাধিক ঢোকান
 ```
 
-#### Removing Elements
+#### উপাদান সরানো
 ```dart
 List<int> numbers = [1, 2, 3, 4, 5, 3];
 
-numbers.remove(3);               // Remove first occurrence: [1, 2, 4, 5, 3]
-numbers.removeAt(0);             // Remove at index: [2, 4, 5, 3]
-numbers.removeLast();            // Remove last: [2, 4, 5]
-numbers.removeRange(0, 2);       // Remove range: [5]
-numbers.removeWhere((n) => n > 3); // Remove by condition
-numbers.clear();                 // Remove all elements
+numbers.remove(3);               // প্রথম occurrence সরান: [1, 2, 4, 5, 3]
+numbers.removeAt(0);             // ইন্ডেক্সে সরান: [2, 4, 5, 3]
+numbers.removeLast();            // শেষটি সরান: [2, 4, 5]
+numbers.removeRange(0, 2);       // রেঞ্জ সরান: [5]
+numbers.removeWhere((n) => n > 3); // শর্ত অনুযায়ী সরান
+numbers.clear();                 // সব উপাদান সরান
 ```
 
-#### Accessing Elements
+#### উপাদান অ্যাক্সেস করা
 ```dart
 List<String> names = ['Alice', 'Bob', 'Charlie', 'David'];
 
-names[0];                        // Access by index: 'Alice'
-names.elementAt(1);              // Access by index: 'Bob'
-names.indexOf('Charlie');        // Find index: 2
-names.lastIndexOf('Bob');        // Last occurrence index
-names.contains('Alice');         // Check if contains: true
+names[0];                        // ইন্ডেক্স দিয়ে অ্যাক্সেস: 'Alice'
+names.elementAt(1);              // ইন্ডেক্স দিয়ে অ্যাক্সেস: 'Bob'
+names.indexOf('Charlie');        // ইন্ডেক্স খুঁজুন: 2
+names.lastIndexOf('Bob');        // শেষ occurrence এর ইন্ডেক্স
+names.contains('Alice');         // আছে কিনা চেক: true
 ```
 
-#### Modifying Elements
+#### উপাদান পরিবর্তন করা
 ```dart
 List<int> numbers = [1, 2, 3, 4, 5];
 
-numbers[0] = 10;                 // Update element: [10, 2, 3, 4, 5]
-numbers.replaceRange(1, 3, [20, 30]); // Replace range
-numbers.fillRange(0, 2, 0);      // Fill range with value
-numbers.setAll(0, [100, 200]);   // Set multiple from index
+numbers[0] = 10;                 // উপাদান আপডেট: [10, 2, 3, 4, 5]
+numbers.replaceRange(1, 3, [20, 30]); // রেঞ্জ প্রতিস্থাপন
+numbers.fillRange(0, 2, 0);      // রেঞ্জ মান দিয়ে পূরণ
+numbers.setAll(0, [100, 200]);   // ইন্ডেক্স থেকে একাধিক সেট করুন
 ```
 
-#### List Transformation
+#### লিস্ট রূপান্তর
 ```dart
 List<int> numbers = [1, 2, 3, 4, 5];
 
-numbers.map((n) => n * 2);       // Transform: [2, 4, 6, 8, 10]
-numbers.where((n) => n > 2);     // Filter: [3, 4, 5]
-numbers.take(3);                 // Take first n: [1, 2, 3]
-numbers.skip(2);                 // Skip first n: [3, 4, 5]
-numbers.toSet();                 // Convert to Set
-numbers.sublist(1, 4);           // Get sublist: [2, 3, 4]
-numbers.getRange(1, 4);          // Get range as iterable
+numbers.map((n) => n * 2);       // রূপান্তর: [2, 4, 6, 8, 10]
+numbers.where((n) => n > 2);     // ফিল্টার: [3, 4, 5]
+numbers.take(3);                 // প্রথম n নিন: [1, 2, 3]
+numbers.skip(2);                 // প্রথম n বাদ দিন: [3, 4, 5]
+numbers.toSet();                 // Set-এ রূপান্তর
+numbers.sublist(1, 4);           // সাবলিস্ট পান: [2, 3, 4]
+numbers.getRange(1, 4);          // iterable হিসেবে রেঞ্জ পান
 ```
 
-#### List Operations
+#### লিস্ট অপারেশন
 ```dart
 List<int> numbers = [3, 1, 4, 1, 5, 9];
 
-numbers.sort();                  // Sort ascending: [1, 1, 3, 4, 5, 9]
-numbers.shuffle();               // Shuffle randomly
-numbers.join(', ');              // Join to string: "1, 1, 3, 4, 5, 9"
-numbers.reduce((a, b) => a + b); // Reduce to single value: 23
-numbers.fold(0, (sum, n) => sum + n); // Fold with initial value
-numbers.every((n) => n > 0);     // Check if all match: true
-numbers.any((n) => n > 5);       // Check if any matches: true
+numbers.sort();                  // ঊর্ধ্বক্রমে সাজান: [1, 1, 3, 4, 5, 9]
+numbers.shuffle();               // এলোমেলো করুন
+numbers.join(', ');              // স্ট্রিং-এ যোগ দিন: "1, 1, 3, 4, 5, 9"
+numbers.reduce((a, b) => a + b); // একটি মানে কমান: 23
+numbers.fold(0, (sum, n) => sum + n); // প্রাথমিক মান সহ ভাঁজ করুন
+numbers.every((n) => n > 0);     // সব মিলে কিনা চেক: true
+numbers.any((n) => n > 5);       // যেকোনো মিলে কিনা চেক: true
 ```
 
-#### List Generation
+#### লিস্ট তৈরি করা
 ```dart
-// Fixed length list
+// নির্দিষ্ট দৈর্ঘ্যের লিস্ট
 List<int> fixedList = List.filled(5, 0); // [0, 0, 0, 0, 0]
 
-// Generate list
+// লিস্ট জেনারেট করুন
 List<int> generated = List.generate(5, (i) => i * 2); // [0, 2, 4, 6, 8]
 
-// From iterable
+// iterable থেকে
 List<int> fromSet = List.from({1, 2, 3}); // [1, 2, 3]
 
-// Empty list
+// খালি লিস্ট
 List<String> empty = [];
 ```
 
 ---
 
-## Set (Unique Collection)
+## সেট (অনন্য কালেকশন)
 
-### What is a Set?
-An unordered collection of unique elements. Sets automatically remove duplicates.
+### সেট কী?
+অনন্য উপাদানের একটি অক্রমবদ্ধ সংগ্রহ। সেট স্বয়ংক্রিয়ভাবে ডুপ্লিকেট সরিয়ে দেয়।
 
 ```dart
 Set<int> numbers = {1, 2, 3, 4, 5};
 var names = {'Alice', 'Bob', 'Charlie'};
 ```
 
-### Set Properties
+### সেট প্রপার্টি
 
 ```dart
 Set<int> numbers = {1, 2, 3, 4, 5};
 
-numbers.length;           // Get size: 5
-numbers.first;            // Get first element: 1
-numbers.last;             // Get last element: 5
-numbers.isEmpty;          // Check if empty: false
-numbers.isNotEmpty;       // Check if not empty: true
+numbers.length;           // আকার পান: 5
+numbers.first;            // প্রথম উপাদান পান: 1
+numbers.last;             // শেষ উপাদান পান: 5
+numbers.isEmpty;          // খালি কিনা চেক: false
+numbers.isNotEmpty;       // খালি নয় কিনা চেক: true
 ```
 
-### Set Methods
+### সেট মেথড
 
-#### Adding Elements
+#### উপাদান যোগ করা
 ```dart
 Set<int> numbers = {1, 2, 3};
 
-numbers.add(4);                  // Add single: {1, 2, 3, 4}
-numbers.add(3);                  // Duplicate ignored: {1, 2, 3, 4}
-numbers.addAll([5, 6, 7]);       // Add multiple: {1, 2, 3, 4, 5, 6, 7}
+numbers.add(4);                  // একটি যোগ করুন: {1, 2, 3, 4}
+numbers.add(3);                  // ডুপ্লিকেট উপেক্ষা: {1, 2, 3, 4}
+numbers.addAll([5, 6, 7]);       // একাধিক যোগ করুন: {1, 2, 3, 4, 5, 6, 7}
 ```
 
-#### Removing Elements
+#### উপাদান সরানো
 ```dart
 Set<int> numbers = {1, 2, 3, 4, 5};
 
-numbers.remove(3);               // Remove element: {1, 2, 4, 5}
-numbers.removeAll([1, 2]);       // Remove multiple: {4, 5}
-numbers.retainAll([4, 5, 6]);    // Keep only these: {4, 5}
-numbers.removeWhere((n) => n > 4); // Remove by condition: {4}
-numbers.clear();                 // Remove all elements
+numbers.remove(3);               // উপাদান সরান: {1, 2, 4, 5}
+numbers.removeAll([1, 2]);       // একাধিক সরান: {4, 5}
+numbers.retainAll([4, 5, 6]);    // শুধু এগুলো রাখুন: {4, 5}
+numbers.removeWhere((n) => n > 4); // শর্ত অনুযায়ী সরান: {4}
+numbers.clear();                 // সব উপাদান সরান
 ```
 
-#### Set Operations
+#### সেট অপারেশন
 ```dart
 Set<int> set1 = {1, 2, 3, 4};
 Set<int> set2 = {3, 4, 5, 6};
 
-set1.union(set2);                // Union: {1, 2, 3, 4, 5, 6}
-set1.intersection(set2);         // Intersection: {3, 4}
-set1.difference(set2);           // Difference: {1, 2}
-set1.containsAll([1, 2]);        // Check if contains all: true
+set1.union(set2);                // ইউনিয়ন: {1, 2, 3, 4, 5, 6}
+set1.intersection(set2);         // ইন্টারসেকশন: {3, 4}
+set1.difference(set2);           // পার্থক্য: {1, 2}
+set1.containsAll([1, 2]);        // সব আছে কিনা চেক: true
 ```
 
-#### Checking Elements
+#### উপাদান যাচাই করা
 ```dart
 Set<String> names = {'Alice', 'Bob', 'Charlie'};
 
-names.contains('Alice');         // Check if contains: true
-names.lookup('Bob');             // Find element: 'Bob' (or null)
+names.contains('Alice');         // আছে কিনা চেক: true
+names.lookup('Bob');             // উপাদান খুঁজুন: 'Bob' (বা null)
 ```
 
-#### Set Transformation
+#### সেট রূপান্তর
 ```dart
 Set<int> numbers = {1, 2, 3, 4, 5};
 
-numbers.map((n) => n * 2);       // Transform: {2, 4, 6, 8, 10}
-numbers.where((n) => n > 2);     // Filter: {3, 4, 5}
-numbers.toList();                // Convert to List: [1, 2, 3, 4, 5]
-```
-
-#### Set Generation
-```dart
-// From list (removes duplicates)
-Set<int> fromList = {1, 2, 2, 3, 3}; // {1, 2, 3}
-
-// From iterable
-Set<int> fromIterable = Set.from([1, 2, 2, 3]); // {1, 2, 3}
-
-// Empty set
-Set<String> empty = {};
-Set<String> emptyTyped = <String>{};
+numbers.map((n) => n * 2);       // রূপান্তর: {2, 4, 6, 8, 10}
+numbers.where((n) => n > 2);     // ফিল্টার: {3, 4, 5}
+numbers.toList();                // List-এ রূপান্তর: [1, 2, 3, 4, 5]
 ```
 
 ---
 
-## Map (Key-Value Collection)
+## ম্যাপ (কী-মান কালেকশন)
 
-### What is a Map?
-An unordered collection of key-value pairs where each key is unique.
+### ম্যাপ কী?
+কী-মান জোড়ার একটি অক্রমবদ্ধ সংগ্রহ যেখানে প্রতিটি কী অনন্য।
 
 ```dart
 Map<String, int> scores = {
@@ -750,33 +731,33 @@ Map<String, int> scores = {
 };
 ```
 
-### Map Properties
+### ম্যাপ প্রপার্টি
 
 ```dart
 Map<String, int> scores = {'Alice': 90, 'Bob': 85};
 
-scores.length;            // Get size: 2
-scores.isEmpty;           // Check if empty: false
-scores.isNotEmpty;        // Check if not empty: true
-scores.keys;              // Get all keys: ('Alice', 'Bob')
-scores.values;            // Get all values: (90, 85)
-scores.entries;           // Get key-value pairs
+scores.length;            // আকার পান: 2
+scores.isEmpty;           // খালি কিনা চেক: false
+scores.isNotEmpty;        // খালি নয় কিনা চেক: true
+scores.keys;              // সব কী পান: ('Alice', 'Bob')
+scores.values;            // সব মান পান: (90, 85)
+scores.entries;           // কী-মান জোড়া পান
 ```
 
-### Map Methods
+### ম্যাপ মেথড
 
-#### Adding and Updating
+#### যোগ ও আপডেট করা
 ```dart
 Map<String, int> scores = {'Alice': 90};
 
-scores['Bob'] = 85;              // Add/Update: {'Alice': 90, 'Bob': 85}
-scores.putIfAbsent('Charlie', () => 95); // Add if absent
-scores.addAll({'David': 88, 'Eve': 92}); // Add multiple
-scores.update('Alice', (v) => v + 5);    // Update value: 95
-scores.updateAll((k, v) => v + 10);      // Update all values
+scores['Bob'] = 85;              // যোগ/আপডেট: {'Alice': 90, 'Bob': 85}
+scores.putIfAbsent('Charlie', () => 95); // না থাকলে যোগ করুন
+scores.addAll({'David': 88, 'Eve': 92}); // একাধিক যোগ করুন
+scores.update('Alice', (v) => v + 5);    // মান আপডেট: 95
+scores.updateAll((k, v) => v + 10);      // সব মান আপডেট
 ```
 
-#### Removing Elements
+#### উপাদান সরানো
 ```dart
 Map<String, int> scores = {
   'Alice': 90,
@@ -784,22 +765,22 @@ Map<String, int> scores = {
   'Charlie': 95,
 };
 
-scores.remove('Bob');            // Remove by key
-scores.removeWhere((k, v) => v < 90); // Remove by condition
-scores.clear();                  // Remove all entries
+scores.remove('Bob');            // কী দিয়ে সরান
+scores.removeWhere((k, v) => v < 90); // শর্ত অনুযায়ী সরান
+scores.clear();                  // সব এন্ট্রি সরান
 ```
 
-#### Accessing Elements
+#### উপাদান অ্যাক্সেস করা
 ```dart
 Map<String, int> scores = {'Alice': 90, 'Bob': 85};
 
-scores['Alice'];                 // Access value: 90
-scores['Unknown'];               // Returns null if not found
-scores.containsKey('Alice');     // Check if key exists: true
-scores.containsValue(90);        // Check if value exists: true
+scores['Alice'];                 // মান অ্যাক্সেস: 90
+scores['Unknown'];               // না পেলে null ফেরত দেয়
+scores.containsKey('Alice');     // কী আছে কিনা চেক: true
+scores.containsValue(90);        // মান আছে কিনা চেক: true
 ```
 
-#### Map Transformation
+#### ম্যাপ রূপান্তর
 ```dart
 Map<String, int> scores = {
   'Alice': 90,
@@ -808,94 +789,75 @@ Map<String, int> scores = {
 };
 
 scores.map((k, v) => MapEntry(k.toUpperCase(), v * 2));
-// Transform: {'ALICE': 180, 'BOB': 170, 'CHARLIE': 190}
+// রূপান্তর: {'ALICE': 180, 'BOB': 170, 'CHARLIE': 190}
 
 scores.forEach((k, v) {
-  print('$k: $v');               // Iterate through entries
+  print('$k: $v');               // এন্ট্রিগুলো ঘুরে দেখুন
 });
 ```
 
-#### Map Generation
-```dart
-// From entries
-Map<String, int> fromEntries = Map.fromEntries([
-  MapEntry('Alice', 90),
-  MapEntry('Bob', 85),
-]);
+---
 
-// From iterables
-Map<String, int> fromIterables = Map.fromIterables(
-  ['Alice', 'Bob'],
-  [90, 85],
-);
+## কালেকশন তুলনা
 
-// Empty map
-Map<String, int> empty = {};
-Map<String, int> emptyTyped = <String, int>{};
-```
+| বৈশিষ্ট্য | List | Set | Map |
+|-----------|------|-----|-----|
+| ক্রম | বজায় থাকে | নিশ্চিত নয় | নিশ্চিত নয় |
+| ডুপ্লিকেট | অনুমোদিত | অনুমোদিত নয় | কী অনন্য হতে হবে |
+| অ্যাক্সেস | ইন্ডেক্স দিয়ে | ইটারেশন দিয়ে | কী দিয়ে |
+| ব্যবহার | ক্রমানুক্রমিক ডেটা | অনন্য আইটেম | কী-মান জোড়া |
 
 ---
 
-## Collection Comparison
+## সাধারণ কালেকশন অপারেশন
 
-| Feature | List | Set | Map |
-|---------|------|-----|-----|
-| Order | Maintained | Not guaranteed | Not guaranteed |
-| Duplicates | Allowed | Not allowed | Keys must be unique |
-| Access | By index | By iteration | By key |
-| Use Case | Ordered data | Unique items | Key-value pairs |
-
----
-
-## Common Collection Operations
-
-### Iteration
+### ইটারেশন
 ```dart
 List<int> numbers = [1, 2, 3];
 
-// For-in loop
+// For-in লুপ
 for (var n in numbers) {
   print(n);
 }
 
-// forEach method
+// forEach মেথড
 numbers.forEach((n) => print(n));
 
-// For loop with index
+// ইন্ডেক্স সহ For লুপ
 for (int i = 0; i < numbers.length; i++) {
   print(numbers[i]);
 }
 ```
 
-### Spread Operator
+### স্প্রেড অপারেটর
 ```dart
 List<int> list1 = [1, 2, 3];
 List<int> list2 = [4, 5, 6];
 
 List<int> combined = [...list1, ...list2]; // [1, 2, 3, 4, 5, 6]
 
-// Null-aware spread
+// নাল-অ্যাওয়ার স্প্রেড
 List<int>? nullableList;
 List<int> safe = [...?nullableList, 1, 2]; // [1, 2]
 ```
 
-### Collection If/For
+### কালেকশন If/For
 ```dart
-// Collection if
+// কালেকশন if
 List<String> items = [
-  'Item 1',
-  if (condition) 'Item 2',
-  'Item 3',
+  'আইটেম ১',
+  if (condition) 'আইটেম ২',
+  'আইটেম ৩',
 ];
 
-// Collection for
+// কালেকশন for
 List<int> numbers = [
   for (int i = 0; i < 5; i++) i * 2,
 ]; // [0, 2, 4, 6, 8]
 ```
 
-### What are Generics?
-Type parameters that allow you to write reusable code that works with different types while maintaining type safety.
+### জেনেরিক্স কী?
+টাইপ প্যারামিটার যা আপনাকে টাইপ সেফটি বজায় রেখে বিভিন্ন টাইপের সাথে কাজ করে পুনর্ব্যবহারযোগ্য কোড লিখতে দেয়।
 
 ```dart
 List<int> intList = [1, 2, 3];
@@ -906,69 +868,34 @@ T getFirst<T>(List<T> items) {
 }
 ```
 
-### Why Use Generics?
-1. **Type Safety:** Catch type errors at compile time
-2. **Code Reusability:** Write once, use with multiple types
-3. **Better Documentation:** Code is self-documenting
-4. **Performance:** Avoid runtime type checks
-
-### What is cast()?
-Converts a collection from one type to another.
-
-```dart
-var numbers = [1, 2, 3];
-List<num> numList = numbers.cast<num>();
-```
-
-### What is Null-assert (!)?
-Tells Dart that a nullable value is definitely not null.
-
-```dart
-String? nullableText = 'Hello';
-String text = nullableText!;  // Assert it's not null
-```
-
-### What is Wildcard (_)?
-A placeholder that ignores a value.
-
-```dart
-var (x, _) = (10, 20);  // Ignore second value
-```
-
-### What are Pattern Types?
-New feature in Dart 3 for destructuring and matching values.
-
-```dart
-switch (value) {
-  case [var a, var b]:
-    print('List with two elements: $a, $b');
-  case {'key': var v}:
-    print('Map with key: $v');
-}
-```
+### জেনেরিক্স কেন ব্যবহার করবেন?
+১. **টাইপ সেফটি:** কম্পাইল সময়ে টাইপ ত্রুটি ধরুন
+২. **কোড পুনর্ব্যবহারযোগ্যতা:** একবার লিখুন, একাধিক টাইপে ব্যবহার করুন
+৩. **ভালো ডকুমেন্টেশন:** কোড স্ব-ব্যাখ্যামূলক
+৪. **পারফরম্যান্স:** রানটাইম টাইপ চেক এড়ানো
 
 ---
 
-## Control Flow
+## কন্ট্রোল ফ্লো
 
-### What are Loops?
-Constructs that repeat a block of code multiple times.
+### লুপ কী?
+কনস্ট্রাক্ট যা একটি কোড ব্লক বারবার পুনরাবৃত্তি করে।
 
-### Types of Loops
+### লুপের প্রকারভেদ
 
-#### 1. For Loop
+#### ১. For লুপ
 ```dart
 for (int i = 0; i < 5; i++) {
   print(i);
 }
 
-// For-in loop
+// For-in লুপ
 for (var item in ['a', 'b', 'c']) {
   print(item);
 }
 ```
 
-#### 2. While Loop
+#### ২. While লুপ
 ```dart
 int count = 0;
 while (count < 5) {
@@ -977,7 +904,7 @@ while (count < 5) {
 }
 ```
 
-#### 3. Do-While Loop
+#### ৩. Do-While লুপ
 ```dart
 int count = 0;
 do {
@@ -986,96 +913,96 @@ do {
 } while (count < 5);
 ```
 
-#### 4. Break and Continue
+#### ৪. Break এবং Continue
 ```dart
 for (int i = 0; i < 10; i++) {
-  if (i == 5) break;        // Exit loop
-  if (i % 2 == 0) continue; // Skip iteration
+  if (i == 5) break;        // লুপ থেকে বের হন
+  if (i % 2 == 0) continue; // ইটারেশন এড়িয়ে যান
   print(i);
 }
 ```
 
-### What is if-else?
-Conditional statement that executes code based on boolean conditions.
+### if-else কী?
+শর্তমূলক বিবৃতি যা বুলিয়ান শর্তের উপর ভিত্তি করে কোড চালায়।
 
 ```dart
 int age = 18;
 if (age >= 18) {
-  print('Adult');
+  print('প্রাপ্তবয়স্ক');
 } else if (age >= 13) {
-  print('Teenager');
+  print('কিশোর');
 } else {
-  print('Child');
+  print('শিশু');
 }
 ```
 
-### What is switch-case?
-Multi-way branch statement that selects one of many code blocks to execute.
+### switch-case কী?
+বহু-পথ শাখা বিবৃতি যা একটি কোড ব্লক নির্বাচন করে চালায়।
 
 ```dart
 String grade = 'A';
 switch (grade) {
   case 'A':
-    print('Excellent');
+    print('চমৎকার');
     break;
   case 'B':
-    print('Good');
+    print('ভালো');
     break;
   default:
-    print('Keep trying');
+    print('চেষ্টা চালিয়ে যান');
 }
 ```
 
-### What is Error Handling?
-The process of responding to and recovering from error conditions in programs.
+### এরর হ্যান্ডলিং কী?
+প্রোগ্রামে ত্রুটি বা অপ্রত্যাশিত পরিস্থিতিতে সাড়া দেওয়া ও পুনরুদ্ধারের প্রক্রিয়া।
 
-### What is an Exception?
-An object representing an error or unexpected event during program execution.
+### এক্সেপশন কী?
+প্রোগ্রাম চলাকালীন কোনো ত্রুটি বা অপ্রত্যাশিত ঘটনা প্রতিনিধিত্বকারী অবজেক্ট।
 
-### What is throw?
-Keyword used to raise an exception.
+### throw কী?
+এক্সেপশন উত্থাপন করতে ব্যবহৃত কীওয়ার্ড।
 
 ```dart
-throw FormatException('Invalid format');
+throw FormatException('অবৈধ ফরম্যাট');
 ```
 
-### What is try-catch?
-Mechanism to handle exceptions and prevent program crashes.
+### try-catch কী?
+এক্সেপশন হ্যান্ডেল এবং প্রোগ্রাম ক্র্যাশ প্রতিরোধের প্রক্রিয়া।
 
 ```dart
 try {
-  int result = 10 ~/ 0;  // Will throw exception
+  int result = 10 ~/ 0;  // এক্সেপশন থ্রো করবে
 } catch (e) {
-  print('Error: $e');
+  print('ত্রুটি: $e');
 }
 ```
 
-### How does finally Work?
-A block that always executes, whether an exception occurred or not.
+### finally কীভাবে কাজ করে?
+একটি ব্লক যা সবসময় চলে, এক্সেপশন হোক বা না হোক।
 
 ```dart
 try {
-  // risky operation
+  // ঝুঁকিপূর্ণ অপারেশন
 } catch (e) {
-  print('Error: $e');
+  print('ত্রুটি: $e');
 } finally {
-  print('This always runs');
+  print('এটি সবসময় চলে');
 }
 ```
 
-### What is assert?
-A statement that checks conditions during development (disabled in production).
+### assert কী?
+ডেভেলপমেন্টের সময় শর্ত পরীক্ষা করে (প্রোডাকশনে নিষ্ক্রিয়)।
 
 ```dart
-assert(age >= 0, 'Age cannot be negative');
+assert(age >= 0, 'বয়স নেগেটিভ হতে পারে না');
 ```
 
 ---
 
-## Functions
+## ফাংশন
 
-### What is a Function?
-A reusable block of code that performs a specific task.
+### ফাংশন কী?
+পুনর্ব্যবহারযোগ্য কোড ব্লক যা একটি নির্দিষ্ট কাজ সম্পাদন করে।
 
 ```dart
 int add(int a, int b) {
@@ -1083,34 +1010,34 @@ int add(int a, int b) {
 }
 ```
 
-### What are Parameters?
-Variables that receive values when a function is called.
+### প্যারামিটার কী?
+ফাংশন কল করার সময় মান গ্রহণ করে এমন ভেরিয়েবল।
 
-### Types of Parameters
+### প্যারামিটারের প্রকারভেদ
 
-#### 1. Named Parameters
+#### ১. নামযুক্ত প্যারামিটার
 ```dart
 void greet({required String name, int age = 0}) {
-  print('Hello $name, age $age');
+  print('হ্যালো $name, বয়স $age');
 }
 
 greet(name: 'Alice', age: 25);
-greet(name: 'Bob');  // age defaults to 0
+greet(name: 'Bob');  // age ডিফল্ট ০
 ```
 
-#### 2. Optional Positional Parameters
+#### ২. ঐচ্ছিক পজিশনাল প্যারামিটার
 ```dart
 void display(String name, [int? age]) {
-  print('Name: $name, Age: ${age ?? 'N/A'}');
+  print('নাম: $name, বয়স: ${age ?? 'N/A'}');
 }
 
 display('Alice');
 display('Bob', 30);
 ```
 
-### Function Types
+### ফাংশনের প্রকারভেদ
 
-#### Anonymous Functions (Lambda)
+#### অ্যানোনিমাস ফাংশন (Lambda)
 ```dart
 var multiply = (int a, int b) => a * b;
 
@@ -1118,13 +1045,13 @@ List<int> numbers = [1, 2, 3];
 numbers.forEach((n) => print(n * 2));
 ```
 
-### What are Annotations?
-Metadata that provides additional information about code.
+### অ্যানোটেশন কী?
+মেটাডেটা যা কোড সম্পর্কে অতিরিক্ত তথ্য প্রদান করে।
 
 ```dart
 @override
 void toString() {
-  return 'Custom string';
+  return 'কাস্টম স্ট্রিং';
 }
 
 @deprecated
@@ -1133,44 +1060,44 @@ void oldFunction() {
 }
 ```
 
-### What are Libraries & Imports?
-**Libraries:** Collections of code that can be reused across projects.
+### লাইব্রেরি ও ইম্পোর্ট কী?
+**লাইব্রেরি:** কোডের সংগ্রহ যা প্রজেক্টে পুনর্ব্যবহার করা যায়।
 
 ```dart
-// Import built-in library
+// বিল্ট-ইন লাইব্রেরি ইম্পোর্ট
 import 'dart:math';
 
-// Import package
+// প্যাকেজ ইম্পোর্ট
 import 'package:http/http.dart';
 
-// Import with prefix
+// প্রিফিক্স সহ ইম্পোর্ট
 import 'dart:math' as math;
 
-// Import specific parts
+// নির্দিষ্ট অংশ ইম্পোর্ট
 import 'package:lib/lib.dart' show functionName;
 ```
 
 ---
 
-## Concurrency
+## কনকারেন্সি
 
-### What is Asynchronous Programming?
-Code execution that allows other operations to run while waiting for long-running tasks to complete.
+### অ্যাসিনক্রোনাস প্রোগ্রামিং কী?
+কোড এক্সিকিউশন যা দীর্ঘ-চলমান কাজের জন্য অপেক্ষা করার সময় অন্য অপারেশন চালাতে দেয়।
 
-### What is Synchronous Programming?
-Sequential code execution where each operation must complete before the next one starts.
+### সিনক্রোনাস প্রোগ্রামিং কী?
+ক্রমানুক্রমিক কোড এক্সিকিউশন যেখানে পরবর্তীটি শুরুর আগে প্রতিটি অপারেশন সম্পন্ন করতে হবে।
 
-### What is async Keyword?
-Marks a function as asynchronous, enabling the use of `await` inside it.
+### async কীওয়ার্ড কী?
+একটি ফাংশনকে অ্যাসিনক্রোনাস হিসেবে চিহ্নিত করে, যা ভেতরে `await` ব্যবহার সক্ষম করে।
 
 ```dart
 Future<String> fetchData() async {
-  return 'Data loaded';
+  return 'ডেটা লোড হয়েছে';
 }
 ```
 
-### What is await Keyword?
-Pauses execution until a Future completes and returns its value.
+### await কীওয়ার্ড কী?
+Future সম্পন্ন না হওয়া পর্যন্ত এক্সিকিউশন থামায় এবং এর মান ফেরত দেয়।
 
 ```dart
 Future<void> loadData() async {
@@ -1179,13 +1106,13 @@ Future<void> loadData() async {
 }
 ```
 
-### Why is Async/Await Needed?
-1. **Non-blocking:** UI remains responsive during long operations
-2. **Readable:** Write asynchronous code that looks synchronous
-3. **Error Handling:** Use try-catch with async operations
+### Async/Await কেন দরকার?
+১. **নন-ব্লকিং:** দীর্ঘ অপারেশনের সময় UI সক্রিয় থাকে
+২. **পাঠযোগ্য:** অ্যাসিনক্রোনাস কোড সিনক্রোনাসের মতো লেখা যায়
+৩. **এরর হ্যান্ডলিং:** async অপারেশনে try-catch ব্যবহার করুন
 
-### What is async*?
-Creates an asynchronous generator function that yields values over time.
+### async* কী?
+একটি অ্যাসিনক্রোনাস জেনারেটর ফাংশন তৈরি করে যা সময়ের সাথে মান yield করে।
 
 ```dart
 Stream<int> countStream(int max) async* {
@@ -1196,23 +1123,23 @@ Stream<int> countStream(int max) async* {
 }
 ```
 
-### Difference Between async and await
+### async এবং await এর পার্থক্য
 
-| Aspect | async | await |
-|--------|-------|-------|
-| Purpose | Declares function as asynchronous | Waits for Future completion |
-| Returns | Future automatically | Unwraps Future value |
-| Usage | Function modifier | Expression operator |
+| দিক | async | await |
+|-----|-------|-------|
+| উদ্দেশ্য | ফাংশনকে অ্যাসিনক্রোনাস ঘোষণা | Future সম্পন্ন হওয়ার অপেক্ষা |
+| রিটার্ন | স্বয়ংক্রিয়ভাবে Future | Future মান আনর্যাপ করে |
+| ব্যবহার | ফাংশন মডিফায়ার | এক্সপ্রেশন অপারেটর |
 
-### What are Isolates?
-Independent workers that run code in parallel without sharing memory. True concurrency in Dart.
+### আইসোলেট কী?
+স্বাধীন ওয়ার্কার যা মেমোরি শেয়ার না করে সমান্তরালভাবে কোড চালায়। ডার্টে সত্যিকারের কনকারেন্সি।
 
 ```dart
 import 'dart:isolate';
 
 void heavyTask(SendPort sendPort) {
-  // Perform intensive computation
-  sendPort.send('Result');
+  // নিবিড় গণনা করুন
+  sendPort.send('ফলাফল');
 }
 
 void main() async {
@@ -1225,46 +1152,46 @@ void main() async {
 
 ---
 
-## Null Safety
+## নাল সেফটি
 
-### What is Null Safety?
-A feature that prevents null reference errors by making nullability part of the type system.
+### নাল সেফটি কী?
+একটি বৈশিষ্ট্য যা nullability কে টাইপ সিস্টেমের অংশ করে নাল রেফারেন্স ত্রুটি প্রতিরোধ করে।
 
-### What is Sound Null Safety?
-Dart's guarantee that non-nullable types will never contain null values at runtime.
+### সাউন্ড নাল সেফটি কী?
+ডার্টের গ্যারান্টি যে নন-নালেবল টাইপে রানটাইমে কখনো null থাকবে না।
 
 ```dart
-int age = 25;        // Cannot be null
-int? nullableAge;    // Can be null
+int age = 25;        // null হতে পারে না
+int? nullableAge;    // null হতে পারে
 ```
 
-### What is Unsound Null Safety?
-A mixed mode where some code has null safety while other parts don't (migration period).
+### আনসাউন্ড নাল সেফটি কী?
+মিশ্র মোড যেখানে কিছু কোডে নাল সেফটি আছে এবং অন্যগুলোতে নেই (মাইগ্রেশন সময়কাল)।
 
-### Null Safety Operators
+### নাল সেফটি অপারেটর
 
 ```dart
 String? nullable = null;
 
-// Null-aware access
+// নাল-অ্যাওয়ার অ্যাক্সেস
 nullable?.length;
 
-// Null assertion
-nullable!.length;  // Throws if null
+// নাল অ্যাসার্শন
+nullable!.length;  // null হলে থ্রো করে
 
-// Null coalescing
-String value = nullable ?? 'default';
+// নাল কোয়ালেসিং
+String value = nullable ?? 'ডিফল্ট';
 
-// Null-aware cascade
+// নাল-অ্যাওয়ার ক্যাসকেড
 nullable?..trim()..toLowerCase();
 ```
 
 ---
 
-## JSON Handling
+## JSON হ্যান্ডলিং
 
-### What is JSON?
-JavaScript Object Notation – a lightweight data interchange format that's easy to read and write.
+### JSON কী?
+JavaScript Object Notation – একটি হালকা ডেটা বিনিময় ফরম্যাট যা পড়তে ও লিখতে সহজ।
 
 ```json
 {
@@ -1275,8 +1202,8 @@ JavaScript Object Notation – a lightweight data interchange format that's easy
 }
 ```
 
-### What is Decode (Parsing)?
-Converting JSON string into Dart objects.
+### ডিকোড (পার্সিং) কী?
+JSON স্ট্রিংকে ডার্ট অবজেক্টে রূপান্তর করা।
 
 ```dart
 import 'dart:convert';
@@ -1288,8 +1215,8 @@ print(user['name']);  // Alice
 print(user['age']);   // 25
 ```
 
-### What is Encode (Serialization)?
-Converting Dart objects into JSON strings.
+### এনকোড (সিরিয়ালাইজেশন) কী?
+ডার্ট অবজেক্টকে JSON স্ট্রিংয়ে রূপান্তর করা।
 
 ```dart
 import 'dart:convert';
@@ -1306,24 +1233,24 @@ print(jsonString);  // {"name":"Alice","age":25,"hobbies":["reading","gaming"]}
 
 ---
 
-## Next Steps
+## পরবর্তী ধাপ
 
-After completing this syllabus, you'll be ready to:
+এই সিলেবাস সম্পন্ন করার পর আপনি প্রস্তুত থাকবেন:
 
-1. **Learn Object-Oriented Programming (OOP)** concepts in Dart
-2. **Build Flutter Applications** with confidence
-3. **Explore Advanced Topics** like streams, mixins, and extensions
-4. **Practice Real-World Projects** to solidify your knowledge
-
----
-
-## Resources
-
-- **Official Dart Documentation:** https://dart.dev/guides
-- **DartPad (Online Editor):** https://dartpad.dev
-- **Flutter Documentation:** https://flutter.dev/docs
-- **Dart Package Repository:** https://pub.dev
+১. **অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিং (OOP)** ধারণা ডার্টে শিখতে
+২. **ফ্লাটার অ্যাপ্লিকেশন** তৈরিতে আত্মবিশ্বাসী হতে
+৩. **উন্নত বিষয়** যেমন স্ট্রিম, মিক্সিন এবং এক্সটেনশন অন্বেষণ করতে
+৪. **বাস্তব-জীবনের প্রজেক্ট** অনুশীলন করে জ্ঞান মজবুত করতে
 
 ---
 
-**Note:** This syllabus is designed to build a strong foundation in Dart programming. Each topic should be understood thoroughly before moving to the next. Practice coding examples for every concept to reinforce learning.
+## রিসোর্সসমূহ
+
+- **অফিসিয়াল ডার্ট ডকুমেন্টেশন:** https://dart.dev/guides
+- **DartPad (অনলাইন এডিটর):** https://dartpad.dev
+- **ফ্লাটার ডকুমেন্টেশন:** https://flutter.dev/docs
+- **ডার্ট প্যাকেজ রিপোজিটরি:** https://pub.dev
+
+---
+
+**নোট:** এই সিলেবাসটি ডার্ট প্রোগ্রামিংয়ে একটি শক্তিশালী ভিত্তি গড়তে ডিজাইন করা হয়েছে। পরবর্তী বিষয়ে যাওয়ার আগে প্রতিটি বিষয় ভালোভাবে বুঝতে হবে। শেখা মজবুত করতে প্রতিটি ধারণার জন্য কোড উদাহরণ অনুশীলন করুন।
